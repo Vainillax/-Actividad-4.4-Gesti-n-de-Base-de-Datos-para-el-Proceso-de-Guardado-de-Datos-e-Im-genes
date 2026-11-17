@@ -118,6 +118,9 @@ namespace Biblioteca
             pnlFormularioBase.Controls.SetChildIndex(lblAutoria, 0);
             pnlFormularioBase.Controls.SetChildIndex(label1, 0);
             pnlFormularioBase.Controls.SetChildIndex(txtId, 0);
+            // El género queda al frente para que ningún otro control lo tape.
+            pnlFormularioBase.Controls.SetChildIndex(lbl_Genero_frmLibros, 0);
+            pnlFormularioBase.Controls.SetChildIndex(cmb_Genero_frmLibros, 0);
             // 
             // txtId
             // 
@@ -137,13 +140,10 @@ namespace Biblioteca
             lblAutoria.Text = "Equipo 3\r\nCONTRERAS Rodríguez Janis Isabel\r\nMACÍAS Cruz Meredith Miranda\r\nTORRES Barrera José Ángel";
             lblAutoria.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // btn_Imagen_frmLibros
-            // 
-            // 
             // lbl_Genero_frmLibros
             // 
             lbl_Genero_frmLibros.AutoSize = true;
-            lbl_Genero_frmLibros.Location = new Point(540, 132);
+            lbl_Genero_frmLibros.Location = new Point(610, 411);
             lbl_Genero_frmLibros.Name = "lbl_Genero_frmLibros";
             lbl_Genero_frmLibros.Size = new Size(58, 20);
             lbl_Genero_frmLibros.TabIndex = 110;
@@ -153,10 +153,12 @@ namespace Biblioteca
             // 
             cmb_Genero_frmLibros.DropDownStyle = ComboBoxStyle.DropDownList;
             cmb_Genero_frmLibros.FormattingEnabled = true;
-            cmb_Genero_frmLibros.Location = new Point(610, 128);
+            cmb_Genero_frmLibros.Location = new Point(676, 407);
             cmb_Genero_frmLibros.Name = "cmb_Genero_frmLibros";
-            cmb_Genero_frmLibros.Size = new Size(260, 28);
+            cmb_Genero_frmLibros.Size = new Size(200, 28);
             cmb_Genero_frmLibros.TabIndex = 111;
+            // 
+            // btn_Imagen_frmLibros
             // 
             btn_Imagen_frmLibros.Location = new Point(331, 341);
             btn_Imagen_frmLibros.Margin = new Padding(3, 4, 3, 4);
